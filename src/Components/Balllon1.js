@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './balon.css'
 
-const Balllon1 = () => {
+const Balllon1 = ({ randomcolor }) => {
     const [value, setvalue] = useState("")
     const [value1, setvalue1] = useState("")
     const handleSubmit = () => {
@@ -60,38 +60,38 @@ const Balllon1 = () => {
                         <div
                             className='circle'
                             id='hide-1'
-                            style={{ display: "none" }}
+                            style={{ display: "none", backgroundColor: randomcolor[0] }}
                         ></div>
                         <div
                             className='circle'
                             id='hide-2'
-                            style={{ display: "none" }}
+                            style={{ display: "none", backgroundColor: randomcolor[1] }}
                         ></div>
                         <div
                             className='circle'
                             id='hide-3'
-                            style={{ display: "none" }}
+                            style={{ display: "none", backgroundColor: randomcolor[2] }}
                         ></div>
                         <div
                             className='circle'
                             id='hide-4'
-                            style={{ display: "none" }}
+                            style={{ display: "none", backgroundColor: randomcolor[3] }}
                         ></div>
                         <div
                             className='circle'
                             id='hide-5'
-                            style={{ display: "none" }}
+                            style={{ display: "none", backgroundColor: randomcolor[4] }}
                         ></div>
 
                     </div>
                 </div>
                 <div className="center">
                     <div style={{ fontWeight: "600" }}>5 circles</div>
-                    <div className="circle" id='circle-1'></div>
-                    <div className="circle" id='circle-2'></div>
-                    <div className="circle" id='circle-3'></div>
-                    <div className="circle" id='circle-4'></div>
-                    <div className="circle" id='circle-5'></div>
+                    <div className="circle" id='circle-1' style={{ backgroundColor: randomcolor[0] }}></div>
+                    <div className="circle" id='circle-2' style={{ backgroundColor: randomcolor[1] }}></div>
+                    <div className="circle" id='circle-3' style={{ backgroundColor: randomcolor[2] }}></div>
+                    <div className="circle" id='circle-4' style={{ backgroundColor: randomcolor[3] }}></div>
+                    <div className="circle" id='circle-5' style={{ backgroundColor: randomcolor[4] }}></div>
                 </div>
                 <div className='inputbox'>
 
